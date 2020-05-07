@@ -654,6 +654,7 @@ MonoBehaviour:
   - {fileID: 1615132915}
   - {fileID: 565142201}
   - {fileID: 697417108}
+  _endPoint: {fileID: 752980414}
   _timeInterval: 2
   _isSpawn: 1
   _timeText: {fileID: 1990678296}

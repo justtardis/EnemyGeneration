@@ -8,9 +8,9 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private bool _isMove = false;
 
-    private void Start()
+    public void SetTargetPosition(Transform target)
     {
-        _targetPosition = FindObjectOfType<DeathZone>().gameObject.transform;
+        _targetPosition = target;
     }
 
     private void Update()
