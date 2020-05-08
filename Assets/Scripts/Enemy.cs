@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int Health { get; private set; }
-  
-    private void Start()
-    {
-        Health = 100;
-    }
+    [SerializeField] private int _health;
 
-    public void Damage(int getDamage)
+    public void GetDamage(int damageCount)
     {
-        Health -= getDamage;
-        if (Health <= 0)
+        _health -= damageCount;
+        if (_health <= 0)
         {
             Destroy(gameObject);
         }

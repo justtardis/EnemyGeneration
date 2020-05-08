@@ -11,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
     public void SetTargetPosition(Transform target)
     {
         _targetPosition = target;
+        _speed = Random.Range(1f, 2f);
     }
 
     private void Update()

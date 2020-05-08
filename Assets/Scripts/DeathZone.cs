@@ -11,12 +11,12 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.TryGetComponent(out Enemy enemy))
         {
-            Damage(enemy);
+            HitDamage(enemy);
         }
     }
 
-    private void Damage(Enemy enemy)
+    private void HitDamage(Enemy enemy)
     {
-        enemy.Damage(_damageCount);
+        enemy.GetDamage(_damageCount);
     }
 }
