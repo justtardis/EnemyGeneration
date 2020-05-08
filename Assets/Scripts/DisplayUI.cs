@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class DisplayUI : MonoBehaviour
 {
     [SerializeField] private Text _timeText;
-    [SerializeField] private float _timeElapsed;
+    [SerializeField] private float _spawnTimeDisplay; 
     
     public void SetTime(float time)
     {
-        _timeElapsed = time;
+        _spawnTimeDisplay = time;
     }
     private void Update()
     {
-        _timeText.text = _timeElapsed.ToString("0.###") + " sec";
+        _timeText.text = _spawnTimeDisplay.ToString("0.###") + " sec";
     }
 }
